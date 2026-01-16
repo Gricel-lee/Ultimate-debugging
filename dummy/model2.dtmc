@@ -1,0 +1,12 @@
+
+dtmc
+
+const double y;
+
+module sys2
+ 
+ s:[0..3];
+ [] s=0 -> 0.5:(s'=1) + 0.5:(s'=2);
+ [] s=1 -> y:(s'=2) + (1-y):(s'=3);
+
+endmodule

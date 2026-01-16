@@ -1,0 +1,12 @@
+dtmc
+
+const double x;
+
+module sys1
+ 
+ s:[0..3];
+ [] s=0 -> 0.2:(s'=1) + 0.1:(s'=2) + 0.7:(s'=3);
+ [] s=1 -> x:(s'=2) + (1-x):(s'=3);
+
+endmodule
+

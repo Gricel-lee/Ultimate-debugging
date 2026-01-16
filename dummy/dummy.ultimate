@@ -1,0 +1,32 @@
+{"models": {
+    "model2": {
+        "synthesis": {"properties": []},
+        "fileName": "model2.dtmc",
+        "id": "model2",
+        "parameters": {
+            "environment": {},
+            "internal": {},
+            "dependency": {"y": {
+                "modelId": "model1",
+                "name": "y",
+                "property": "P=?[F s=2]"
+            }}
+        },
+        "properties": ["P=?[F s=3]"]
+    },
+    "model1": {
+        "synthesis": {"properties": []},
+        "fileName": "model1.dtmc",
+        "id": "model1",
+        "parameters": {
+            "environment": {},
+            "internal": {},
+            "dependency": {"x": {
+                "modelId": "model2",
+                "name": "x",
+                "property": "P=?[F s=2]"
+            }}
+        },
+        "properties": []
+    }
+}}
