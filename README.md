@@ -24,6 +24,9 @@ Also add the environmental variable  ```ULTIMATE_DIR=<path to ultimate/ULTIMATE_
 - In Run configurations > JRE tab, select JAVASE-21
 - Press Apply and close
 
+- Open a terminal window, then do ```nano ~/.bashrc```, add at the end ```export LD_LIBRARY_PATH="/usr/lib/x86_64-linux-gnu:$LD_LIBRARY_PATH"``` (this is to avoid Storm not finding libstorm-cli-utilities.so.1.11.1).
+- 
+
 
 ### 3 Setup ULTIMATE problem
  - Got o Debug > Debug configuration > Arguments tab. Type in ```Program arguments``` the input arguments required to run ULTIMATE headless (See https://github.com/ULTIMATE-YORK/ULTIMATE/tree/main-build-7). For example:
@@ -33,10 +36,13 @@ Also add the environmental variable  ```ULTIMATE_DIR=<path to ultimate/ULTIMATE_
 
 <img width="1094" height="176" alt="image" src="https://github.com/user-attachments/assets/8aafe482-9605-4903-aad1-309385d2883f" />
 
+### Done!
 
 
-# Changes
-## Project.java
+### (Not required) Additional Changes
+This contains changes to the code that are useful to help debugging, as currently, they are bugs.
+
+#### In Project.java
 
 Line 290: Do not stop if ULTIMATE_DIR== null.
 
