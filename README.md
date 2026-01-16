@@ -23,8 +23,14 @@ Also add the environmental variable  ```ULTIMATE_DIR=<path to ultimate/ULTIMATE_
 
 - In Run configurations > JRE tab, select JAVASE-21
 - Press Apply and close
-### 3 Setup Debugging in Eclipse
- - Got o Debug > Debug configuration > Arguments tab. Type in ```Program arguments``` the input arguments required to run ULTIMATE headless (See https://github.com/ULTIMATE-YORK/ULTIMATE/tree/main-build-7)
+
+
+### 3 Setup ULTIMATE problem
+ - Got o Debug > Debug configuration > Arguments tab. Type in ```Program arguments``` the input arguments required to run ULTIMATE headless (See https://github.com/ULTIMATE-YORK/ULTIMATE/tree/main-build-7). For example:
+```
+-pf /home/XXX/Desktop/ULTIMATE/case_studies/dummy/dummy.ultimate -m model2 -o /home/XXX/Desktop/ULTIMATE/ULTIMATE_MODEL_MANAGER/ULTIMATE_Numerical_Solver/output-dummy
+```
+
 <img width="1094" height="176" alt="image" src="https://github.com/user-attachments/assets/8aafe482-9605-4903-aad1-309385d2883f" />
 
 
