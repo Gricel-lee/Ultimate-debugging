@@ -39,10 +39,10 @@ Also add the environmental variable  ```ULTIMATE_DIR=<path to ultimate/ULTIMATE_
 ### Done!
 
 
-### (Not required) Additional Changes
+## Optional Code Changes
 This contains changes to the code that are useful to help debugging, as currently, they are bugs.
 
-#### In Project.java
+#### 1) In Project.java
 
 Line 290: Do not stop if ULTIMATE_DIR== null.
 
