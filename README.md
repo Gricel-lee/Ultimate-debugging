@@ -41,9 +41,9 @@ Also add the environmental variable  ```ULTIMATE_DIR=<path to ultimate/ULTIMATE_
 
 
 ## Optional Code Changes
-This contains changes to the code that are useful to help debugging, as currently, they are bugs.
+This contains changes to the code that are useful to help debugging (or bugs themselves!)...
 
-#### 1) In Project.java
+#### 1) In Project.java [bug]
 
 Line 290: Do not stop if ULTIMATE_DIR== null.
 
@@ -59,3 +59,6 @@ if (ULTIMATE_DIR == null || ULTIMATE_DIR.equals("")) {
 		}
 ```
 
+#### 2) In ```ultimate/Ultimate.java```
+
+line 55 set verbose to True ```private boolean verbose = true;```
