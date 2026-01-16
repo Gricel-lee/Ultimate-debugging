@@ -4,7 +4,8 @@ Debugging guide for ULTIMATE
 
 # Debug ULTIMATE
 ### 1 Install ULTIMATE 
-First, install ULTIMATE with the single file ultimate-installer-v2.txt
+First, install ULTIMATE with the single file ```ultimate-installer-v2.txt``` https://drive.google.com/file/d/1PM9UHvz6VIDI9Ga8syl9bNhpt77fy_Ro/view?usp=drive_link
+
 ### 2 Setup Eclipse IDE
 - In Eclipse, open a workspace with the downloaded ULTIMATE folder as root.
 - In File, import existing MAVEN project from "ULTIMATE_MODEL_MANAGER" folder.
